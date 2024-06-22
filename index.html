@@ -4,8 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- language -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'id',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+     </script>
+    <!--  -->
     <title>Bryant's Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .goog-te-gadget {
+        background-color: #0083b0; /* Change to your desired background color */
+        color: white; /* Change text color */
+        border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Customizing the dropdown menu */
+        .goog-te-menu-value {
+        background-color: #0083b0; /* Background color for the dropdown */
+        color: white; /* Text color for the dropdown */
+        }
+
+    </style>
 </head>
 
 <body class=" text-white" style="background: linear-gradient(135deg, #00b4db, #0083b0);">
@@ -13,7 +52,7 @@
         <!-- Navigation menu -->
         <nav class="bg-gray-700 py-2 fixed w-full top-0 left-0 z-50 h-20">
             <div class="container flex justify-between items-center my-5">
-                <div class="text-xl font-bold ml-40">
+                <div class="flex text-xl font-bold ml-40">
                     Bryant's Portfolio
                 </div>
                 <div class="flex space-x-4">
@@ -32,7 +71,7 @@
                 </div>
             </div>
         </nav>
-
+        
         <!-- Profile image -->
         <div class="relative">
             <div class="w-36 h-36 rounded-full bg-white absolute top-0 
@@ -43,6 +82,8 @@
         </div> <!-- White circle for profile image -->
     </div>
 
+    <div id="google_translate_element" class="absolute w-fit h-fit mt-20 right-0 text-black"></div>
+   
     <!-- About section -->
     <div class="mb-16 container mx-auto pt-20">
         <section id="about" class="m-20 justi-center text-center mt-20 relative 
