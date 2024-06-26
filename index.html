@@ -8,14 +8,14 @@
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-            pageLanguage: 'id',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                pageLanguage: 'id',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             }, 'google_translate_element');
         }
     </script>
-     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit">
-     </script>
+    </script>
     <!--  -->
     <title>Bryant's Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,30 +31,85 @@ cb=googleTranslateElementInit">
         }
     </script>
 
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         .goog-te-gadget {
-        background-color: #0083b0; /* Change to your desired background color */
-        color: white; /* Change text color */
-        border-radius: 5px; /* Rounded corners */
+            background-color: #0083b0;
+            /* Change to your desired background color */
+            color: white;
+            /* Change text color */
+            border-radius: 5px;
+            /* Rounded corners */
         }
 
         /* Customizing the dropdown menu */
         .goog-te-menu-value {
-        background-color: #0083b0; /* Background color for the dropdown */
-        color: white; /* Text color for the dropdown */
+            background-color: #0083b0;
+            /* Background color for the dropdown */
+            color: white;
+            /* Text color for the dropdown */
         }
 
+        @media (orientation: landscape) {
+            .sidebar {
+                display: none;
+            }
+        }
+
+        @media (orientation: portrait) {
+            .navbar {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- css -->
+    <!-- tooltip -->
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            /* border-bottom: 1px dotted black; */
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            /* top: -5px; */
+            left: 105%;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
     </style>
 </head>
 
-<body class=" text-white" style="background: linear-gradient(135deg, #00b4db, #0083b0);">
+<body class=" text-white" style="background: linear-gradient(90deg, #00b4db, #0083b0);">
     <div class="sticky top-0 z-50">
         <!-- Navigation menu -->
-        <nav class="bg-gray-700 py-2 fixed w-full top-0 left-0 z-50 h-20">
-            <div class="container flex justify-between items-center my-5">
-                <div class="flex text-xl font-bold ml-40">
+        <nav class="navbar bg-gray-700 py-2 fixed w-full top-0 left-0 z-50 h-20">
+            <div class="container flex flex-wrap justify-between items-center my-5">
+                <div class="flex text-xl font-bold ml-20">
                     Bryant's Portfolio
                 </div>
+                <!-- Profile image -->
+                <div class="static flex">
+                    <div class="w-36 h-36 rounded-full bg-white absolute top-0">
+                        <img alt="imageofProfile" class="w-36 h-36 rounded-full border-4" style="border-color: #0083b0;"
+                            src="https://media.licdn.com/dms/image/D5603AQHFjJVhaQiH2A/profile-displayphoto-shrink_200_200/0/1691646533029?e=2147483647&v=beta&t=8lEToPNHItHzFcpxbjMLV_TvNzwJ_4_ZmJkZmNs8dVU" />
+                    </div>
+                </div> <!-- White circle for profile image -->
                 <div class="flex space-x-4">
                     <a class="hover:bg-gray-800 text-white px-4 py-2 
                               no-underline transition duration-300 
@@ -71,21 +126,77 @@ cb=googleTranslateElementInit">
                 </div>
             </div>
         </nav>
-        
-        <!-- Profile image -->
-        <div class="relative">
-            <div class="w-36 h-36 rounded-full bg-white absolute top-0 
-                        left-1/2 transform -translate-x-1/2 z-50">
-                <img alt="imageofProfile" class="w-36 h-36 rounded-full border-4" style="border-color: #0083b0;"
-                    src="https://media.licdn.com/dms/image/D5603AQHFjJVhaQiH2A/profile-displayphoto-shrink_200_200/0/1691646533029?e=2147483647&v=beta&t=8lEToPNHItHzFcpxbjMLV_TvNzwJ_4_ZmJkZmNs8dVU" />
+        <nav class="sidebar bg-gray-800 text-white w-20 h-screen fixed top-0 left-0 z-40">
+            <div class="flex flex-col justify-center items-center content-between h-screen">
+                <!-- <div class="flex text-xl font-bold ml-2 mt-2">
+                    Bryant's Portfolio
+                </div> -->
+                <div class="grow pb-4 h-100">
+                    <ul class="flex flex-col p-4">
+                        <li class="mb-4">
+                            <a href="#about" class="hover:bg-gray-700 p-2 bloc tooltip"><i
+                                    class="bi bi-info-circle-fill"></i><span class="tooltiptext">About</span></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#projects" class="hover:bg-gray-700 p-2 block tooltip"><i
+                                    class="bi bi-file-code-fill"></i><span class="tooltiptext">Projects</span></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#skills" class="hover:bg-gray-700 p-2 block tooltip"><i
+                                    class="bi bi-star-fill"></i><span class="tooltiptext">Skills</span></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#contact" class="hover:bg-gray-700 p-2 block tooltip"><i
+                                    class="bi bi-person-lines-fill"></i><span class="tooltiptext">Contact</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="space-y-64"></div> -->
+                <div class="flex mb-4 tooltip">
+                    <img alt="imageofProfile" class="w-16 h-16 rounded-full border-4" style="border-color: #0083b0;"
+                        src="https://media.licdn.com/dms/image/D5603AQHFjJVhaQiH2A/profile-displayphoto-shrink_200_200/0/1691646533029?e=2147483647&v=beta&t=8lEToPNHItHzFcpxbjMLV_TvNzwJ_4_ZmJkZmNs8dVU" />
+                    <span class="tooltiptext">Bryant Anthony Thauwrisan</span>
+                </div>
             </div>
-        </div> <!-- White circle for profile image -->
+        </nav>
     </div>
-
-    <div id="google_translate_element" class="absolute w-fit h-fit mt-20 right-0 text-black"></div>
-   
+    <!-- <div id="google_translate_element" class="absolute w-fit h-fit mt-20 right-0 text-black"></div> -->
+    <div class="sidebar ml-24 mt-5">
+        Bryant's Portofolio
+    </div>
     <!-- About section -->
-    <div class="mb-16 container mx-auto pt-20">
+    <div class="mb-16 container mx-auto">
+        <div class="navbar pt-20 mt-20"></div>
+        <section id="about" class="mx-20 justi-center text-center relative 
+                   my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative 
+                   overflow-hidden bg-gradient-to-b from-gray-600 to-gray-800">
+            <h2 class="text-2xl font-bold mb-4 text-center">
+                About Me
+            </h2>
+            <p class="text-base font-extralight">
+                Saya adalah mahasiswa semester 8 di Universitas Ciputra Surabaya, Fakultas School of Information
+                Technology, Jurusan <span class="font-extrabold">Sistem Informasi</span>. Selama perkuliahan, saya telah
+                mendalami berbagai aspek
+                pengembangan website, khususnya dengan menggunakan <span class="font-black">Framework Laravel</span>,
+                serta mengelola database dengan
+                <span class="font-black">MySQL</span>. <br> <br>
+                Sebagai bagian dari pengalaman praktis saya, saya telah menyelesaikan magang selama <span
+                    class="font-extrabold">10 bulan di Apple
+                    Developer Academy@UC</span>, dari bulan Maret hingga Desember. Dalam program magang ini, saya
+                mempelajari
+                bahasa pemrograman Swift terutama pada <span class="font-extrabold">SwiftUi</span> dan memperdalam
+                pengetahuan saya tentang
+                desain aplikasi iOS menggunakan Human
+                Interface Guideline (HIG). <br> <br>
+                Pengalaman dan pendidikan saya telah membekali saya dengan keterampilan teknis dan pengetahuan praktis
+                yang kuat dalam pengembangan aplikasi web dan mobile. Saya antusias untuk terus belajar dan
+                mengembangkan kemampuan saya dalam industri teknologi informasi.
+            </p>
+            <a class="inline-block mt-5 px-4 py-2 rounded-md bg-green-500 
+                       text-white hover:bg-blue-600 transition duration-300">
+                Resume
+            </a>
+        </section>
         <section id="about" class="m-20 justi-center text-center mt-20 relative 
                    my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative 
                    overflow-hidden bg-gradient-to-b from-gray-600 to-gray-800">
