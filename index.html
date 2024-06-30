@@ -55,11 +55,19 @@ cb=googleTranslateElementInit">
             .sidebar {
                 display: none;
             }
+
+            .mlp-auto {
+                margin-left: auto;
+            }
         }
 
         @media (orientation: portrait) {
             .navbar {
                 display: none;
+            }
+
+            .mlp-24 {
+                margin-left: 6rem;
             }
         }
     </style>
@@ -81,11 +89,11 @@ cb=googleTranslateElementInit">
             text-align: center;
             border-radius: 6px;
             padding: 5px 0;
-
+            vertical-align: middle;
             /* Position the tooltip */
             position: absolute;
             z-index: 1;
-            /* top: -5px; */
+            top: 0px;
             left: 105%;
         }
 
@@ -99,8 +107,8 @@ cb=googleTranslateElementInit">
     <div class="sticky top-0 z-50">
         <!-- Navigation menu -->
         <nav class="navbar bg-gray-700 py-2 fixed w-full top-0 left-0 z-50 h-20">
-            <div class="container flex flex-wrap justify-between items-center my-5">
-                <div class="flex text-xl font-bold ml-20">
+            <div class=" flex flex-wrap justify-between items-center my-5">
+                <div class="flex text-xl font-bold ml-14">
                     Bryant's Portfolio
                 </div>
                 <!-- Profile image -->
@@ -110,7 +118,7 @@ cb=googleTranslateElementInit">
                             src="https://media.licdn.com/dms/image/D5603AQHFjJVhaQiH2A/profile-displayphoto-shrink_200_200/0/1691646533029?e=2147483647&v=beta&t=8lEToPNHItHzFcpxbjMLV_TvNzwJ_4_ZmJkZmNs8dVU" />
                     </div>
                 </div> <!-- White circle for profile image -->
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 mr-14">
                     <a class="hover:bg-gray-800 text-white px-4 py-2 
                               no-underline transition duration-300 
                               bg-transparent hover:bg-gray-700" href="#about">About</a>
@@ -126,7 +134,7 @@ cb=googleTranslateElementInit">
                 </div>
             </div>
         </nav>
-        <nav class="sidebar bg-gray-800 text-white w-20 h-screen fixed top-0 left-0 z-40">
+        <div class="sidebar bg-gray-800 text-white w-20 h-screen fixed top-0 left-0 z-40">
             <div class="flex flex-col justify-center items-center content-between h-screen">
                 <!-- <div class="flex text-xl font-bold ml-2 mt-2">
                     Bryant's Portfolio
@@ -134,7 +142,7 @@ cb=googleTranslateElementInit">
                 <div class="grow pb-4 h-100">
                     <ul class="flex flex-col p-4">
                         <li class="mb-4">
-                            <a href="#about" class="hover:bg-gray-700 p-2 bloc tooltip"><i
+                            <a href="#about" class="hover:bg-gray-700 p-2 block tooltip"><i
                                     class="bi bi-info-circle-fill"></i><span class="tooltiptext">About</span></a>
                         </li>
                         <li class="mb-4">
@@ -158,77 +166,361 @@ cb=googleTranslateElementInit">
                     <span class="tooltiptext">Bryant Anthony Thauwrisan</span>
                 </div>
             </div>
-        </nav>
+        </div>
     </div>
     <!-- <div id="google_translate_element" class="absolute w-fit h-fit mt-20 right-0 text-black"></div> -->
-    <div class="sidebar ml-24 mt-5">
+    <div class="sidebar ml-24 mt-5 text-2xl font-bold">
         Bryant's Portofolio
     </div>
     <!-- About section -->
-    <div class="mb-16 container mx-auto">
-        <div class="navbar pt-20 mt-20"></div>
-        <section id="about" class="mx-20 justi-center text-center relative 
+    <div class="mlp-24">
+        <div class="mb-16 container mx-auto">
+            <div class="navbar pt-20 mt-20"></div>
+            <section id="about" class="mx-20 justi-center text-center relative 
                    my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative 
                    overflow-hidden bg-gradient-to-b from-gray-600 to-gray-800">
-            <h2 class="text-2xl font-bold mb-4 text-center">
-                About Me
-            </h2>
-            <p class="text-base font-extralight">
-                Saya adalah mahasiswa semester 8 di Universitas Ciputra Surabaya, Fakultas School of Information
-                Technology, Jurusan <span class="font-extrabold">Sistem Informasi</span>. Selama perkuliahan, saya telah
-                mendalami berbagai aspek
-                pengembangan website, khususnya dengan menggunakan <span class="font-black">Framework Laravel</span>,
-                serta mengelola database dengan
-                <span class="font-black">MySQL</span>. <br> <br>
-                Sebagai bagian dari pengalaman praktis saya, saya telah menyelesaikan magang selama <span
-                    class="font-extrabold">10 bulan di Apple
-                    Developer Academy@UC</span>, dari bulan Maret hingga Desember. Dalam program magang ini, saya
-                mempelajari
-                bahasa pemrograman Swift terutama pada <span class="font-extrabold">SwiftUi</span> dan memperdalam
-                pengetahuan saya tentang
-                desain aplikasi iOS menggunakan Human
-                Interface Guideline (HIG). <br> <br>
-                Pengalaman dan pendidikan saya telah membekali saya dengan keterampilan teknis dan pengetahuan praktis
-                yang kuat dalam pengembangan aplikasi web dan mobile. Saya antusias untuk terus belajar dan
-                mengembangkan kemampuan saya dalam industri teknologi informasi.
-            </p>
-            <a class="inline-block mt-5 px-4 py-2 rounded-md bg-green-500 
+                <h2 class="text-2xl font-bold mb-4 text-center">
+                    About Me
+                </h2>
+                <p class="text-base font-extralight">
+                    Saya adalah mahasiswa semester 8 di Universitas Ciputra Surabaya, Fakultas School of Information
+                    Technology, Jurusan <span class="font-extrabold">Sistem Informasi</span>. Selama perkuliahan, saya
+                    telah
+                    mendalami berbagai aspek
+                    pengembangan website, khususnya dengan menggunakan <span class="font-black">Framework
+                        Laravel</span>,
+                    serta mengelola database dengan
+                    <span class="font-black">MySQL</span>. <br> <br>
+                    Sebagai bagian dari pengalaman praktis saya, saya telah menyelesaikan magang selama <span
+                        class="font-extrabold">10 bulan di Apple
+                        Developer Academy@UC</span>, dari bulan Maret hingga Desember. Dalam program magang ini, saya
+                    mempelajari
+                    bahasa pemrograman Swift terutama pada <span class="font-extrabold">SwiftUi</span> dan memperdalam
+                    pengetahuan saya tentang
+                    desain aplikasi iOS menggunakan Human
+                    Interface Guideline (HIG). <br> <br>
+                    Pengalaman dan pendidikan saya telah membekali saya dengan keterampilan teknis dan pengetahuan
+                    praktis
+                    yang kuat dalam pengembangan aplikasi web dan mobile. Saya antusias untuk terus belajar dan
+                    mengembangkan kemampuan saya dalam industri teknologi informasi.
+                </p>
+                <a href="#contact" class="inline-block mt-5 px-4 py-2 rounded-md bg-green-500 
                        text-white hover:bg-blue-600 transition duration-300">
-                Resume
-            </a>
-        </section>
-        <section id="about" class="m-20 justi-center text-center mt-20 relative 
-                   my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative 
-                   overflow-hidden bg-gradient-to-b from-gray-600 to-gray-800">
-            <h2 class="text-2xl font-bold mb-4 text-center">
-                About Me
-            </h2>
-            <p class="text-base font-extralight">
-                Saya adalah mahasiswa semester 8 di Universitas Ciputra Surabaya, Fakultas School of Information
-                Technology, Jurusan <span class="font-extrabold">Sistem Informasi</span>. Selama perkuliahan, saya telah
-                mendalami berbagai aspek
-                pengembangan website, khususnya dengan menggunakan <span class="font-black">Framework Laravel</span>,
-                serta mengelola database dengan
-                <span class="font-black">MySQL</span>. <br> <br>
-                Sebagai bagian dari pengalaman praktis saya, saya telah menyelesaikan magang selama <span
-                    class="font-extrabold">10 bulan di Apple
-                    Developer Academy@UC</span>, dari bulan Maret hingga Desember. Dalam program magang ini, saya
-                mempelajari
-                bahasa pemrograman Swift terutama pada <span class="font-extrabold">SwiftUi</span> dan memperdalam
-                pengetahuan saya tentang
-                desain aplikasi iOS menggunakan Human
-                Interface Guideline (HIG). <br> <br>
-                Pengalaman dan pendidikan saya telah membekali saya dengan keterampilan teknis dan pengetahuan praktis
-                yang kuat dalam pengembangan aplikasi web dan mobile. Saya antusias untuk terus belajar dan
-                mengembangkan kemampuan saya dalam industri teknologi informasi.
-            </p>
-            <a class="inline-block mt-5 px-4 py-2 rounded-md bg-green-500 
-                       text-white hover:bg-blue-600 transition duration-300">
-                Resume
-            </a>
-        </section>
-    </div>
+                    Contact
+                </a>
+            </section>
 
+            <!-- Education Section -->
+            <section id="education" class="m-20 justi-center text-center mt-20 relative 
+                   my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative 
+                   overflow-hidden bg-gradient-to-b from-gray-600 to-gray-800">
+                <h2 class="text-2xl font-bold mb-4 text-center">
+                    Education and Organization History
+                </h2>
+                <div class="grid grid-cols-3 gap-1">
+                    <div class="col-span-2 text-left font-extrabold">• SMA Zion Makassar (IPS)</div>
+                    <div class="text-right">July 2017 - May 2020</div>
+
+                    <div class="col-span-3 text-left pl-5 font-bold">• Pasangan/Asisten Mentor (2018-2019)</div>
+                    <div class="col-span-3 text-left pl-7 mb-2">Membantu mentor dalam membimbing anak siswa/siswi baru
+                        dalam
+                        menumbuhkan iman Kristen</div>
+                    <div class="col-span-3 text-left pl-5 font-bold">• Mentor (2019-2020)</div>
+                    <div class="col-span-3 text-left pl-8 ">Menjadi mentor dalam membimbing anak siswa/siswi baru
+                        dalam
+                        menumbuhkan iman Kristen dan menjadi wadah tempat siswa/siswi bercerita</div>
+                </div>
+
+                <hr class="my-5">
+
+                <div class="grid grid-cols-3 gap-1 mt-2">
+                    <div class="col-span-2 text-left font-extrabold">• Universitas Ciputra Surabaya (Sistem Informasi -
+                        GPA
+                        3.79)</div>
+                    <div class="text-right">September 2020 - Present</div>
+
+                    <div class="col-span-3 text-left pl-5 font-bold">• Anggota Panitia PDD OWeek UCM (2021)</div>
+                    <div class="col-span-3 text-left pl-7 mb-2">Menjadi anggota panitia Publication and Documentation
+                        Department(PDD) pada masa orientasi mahasiswa baru Universitas Ciputra Makassar</div>
+                    <div class="col-span-3 text-left pl-5 font-bold">• Head Koor PDD Oweek UCM (2022)</div>
+                    <div class="col-span-3 text-left pl-8 mb-3">Menjadi Head Koor pada bidang Publication and
+                        Documentation
+                        Department(PDD) untuk membimbing panitia baru untuk masa persiapan Oweek UCM 2022</div>
+                    <div class="col-span-3 text-left pl-5 font-bold">• Anggota Student Union Publikasi dan Dokumentasi
+                        (2022)</div>
+                    <div class="col-span-3 text-left pl-8 mb-3">Menjadi bagian dari organisasi sistem informasi, untuk
+                        melakukan dokumentasi pada beberapa event yang diadakan oleh prodi sistem informasi</div>
+                </div>
+            </section>
+
+            <!-- Project Section -->
+            <section id="projects" class="m-20 justi-center text-center mt-20 relative 
+                   my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative 
+                   overflow-hidden bg-gradient-to-b from-gray-600 to-gray-800">
+                <h2 class="text-2xl font-bold mb-4 text-center">
+                    My Projects
+                </h2>
+                <div class="grid grid-cols-3 gap-3">
+
+                    <!-- Project 1 -->
+                    <div
+                        class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="/imgs/logo27.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sistem
+                                    Toko
+                                    Emas Perhiasan Dua Tujuh</h6>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sistem tersebut dibentuk saat
+                                pengerjaan Tugas Akhir(Skripsi) dengan menggunakan framework Laravel. Saya mengerjakan
+                                sistem ini sebagai Fullstack Developer</p>
+                            <a href="https://github.com/Bryant35/Toko-Dua-Tujuh"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                target="_blank">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="/imgs/logo27.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sistem
+                                    Toko
+                                    Emas Perhiasan Dua Tujuh</h6>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sistem tersebut dibentuk saat
+                                pengerjaan Tugas Akhir(Skripsi) dengan menggunakan framework Laravel.</p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="max-w-md border rounded-lg shadow bg-gray-800 border-gray-700">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="/imgs/logo27.png" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sistem
+                                    Toko
+                                    Emas Perhiasan Dua Tujuh</h6>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sistem tersebut dibentuk saat
+                                pengerjaan Tugas Akhir(Skripsi) dengan menggunakan framework Laravel.</p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- skill -->
+            <section id="skills" class="m-20 justi-center text-center mt-20 relative
+            my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative
+            overflow-hidden border border-gray-200 rounded-lg shadow
+                dark:bg-gray-800
+                dark:border-gray-700 justi-center text-center">
+                <div class="flex items-center justify-between mb-4">
+                    <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Skills</h5>
+                    <!-- <a href="skill.html" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                        View all
+                    </a> -->
+                </div>
+                <div class="max-h-fit">
+                    <div class="flow-root">
+                        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                            <li class="py-3 sm:py-4">
+                                <div class="mb-1 text-base font-medium dark:text-white inline"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+                                        alt="" class="w-5 h-5 inline mb-1"> HTML
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500" style="width: 65%">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="mb-1 text-base font-medium dark:text-white inline"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png"
+                                        alt="" class="h-5 inline mb-1"> CSS</div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500" style="width: 55%">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="mb-1 text-base font-medium dark:text-white"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                                        alt="" class="h-5 inline mb-1"> PHP</div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500" style="width: 70%">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="mb-1 text-base font-medium dark:text-white"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                                        alt="" class="h-5 inline mb-1"> JS</div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500" style="width: 40%">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pt-3 pb-0 sm:pt-4">
+                                <div class="mb-1 text-base font-medium dark:text-white"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png"
+                                        alt="" class="h-5 inline mb-1"> Laravel Framework</div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500" style="width: 75%">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pt-3 pb-0 sm:pt-4">
+                                <div class="mb-1 text-base font-medium dark:text-white"><img
+                                        src="https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png"
+                                        alt="" class="h-5 inline mb-1"> SwiftUi</div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                                    <div class="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500" style="width: 35%">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <embed src="skill.html" type="text/html" class="w-full max-h-fit" height="100%"> -->
+                </div>
+            </section>
+
+            <section id="contact" class="m-20 justi-center text-center mt-20 relative
+            my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative
+            overflow-hidden border border-gray-200 rounded-lg shadow
+                dark:bg-gray-800
+                dark:border-gray-700 justi-center text-center">
+                <div class="">
+                    <h5 class="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
+                        Contact Me
+                    </h5>
+                    <p class="text-sm font-normal text-gray-500 dark:text-gray-400"></p>
+                    <ul class="my-4 space-y-3">
+                        <li>
+                            <a href="mailto:bryantthauwrisan7@gmail.com" class="flex justify-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50
+                            hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500
+                            dark:text-white" target="_blank">
+                                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+                                    alt="" class="h-5 w-5">
+                                <span class="flex-1 ms-3 whitespace-nowrap" id="copyEmailBtn" tooltip="Email">Email -
+                                    <span class="underline">bryantthauwrisan7@gmail.com</span></span>
+                                <!-- <span
+                                class="inline-flex items-center justify-center px-2 py-0.5 ms-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://wa.me/6281386878778"
+                                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                                target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
+                                    alt="" class="h-5">
+                                <span class="flex-1 ms-3 whitespace-nowrap">Whatsapp - <span
+                                        class="underline">(+62)813-8687-8778</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/bryantthauwrisan35/"
+                                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                                target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                                    alt="" class="h-5">
+                                <span class="flex-1 ms-3 whitespace-nowrap">Instagram - <span
+                                        class="underline">@bryantthauwrisan35</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Bryant35"
+                                class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" class="h-5"
+                                    target="_blank">
+                                <span class="flex-1 ms-3 whitespace-nowrap">Github - <span
+                                        class="underline">Bryant35</span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <div>
+                    <a href="#"
+                        class="inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400">
+                        <svg class="w-3 h-3 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        Why do I need to connect with my wallet?</a>
+                </div> -->
+                </div>
+
+            </section>
+            <!-- </section> -->
+        </div>
+    </div>
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+        <div class="p-4 md:py-8 mlp-24">
+            <!-- <div class="sm:flex sm:items-center sm:justify-between">
+                <a href=""
+                    class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="" class="h-8" alt="" />
+                    <span
+                        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Bryant </span>
+                </a>
+                <ul
+                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> -->
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
+                    href="https://github.com/Bryant35" class="hover:underline" target="_blank">Bryant's Portfolio</a>.
+                All Rights
+                Reserved.</span>
+        </div>
+    </footer>
 
 </body>
 
