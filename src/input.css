@@ -1,3 +1,71 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+.goog-te-gadget {
+  background-color: #0083b0;
+  /* Change to your desired background color */
+  color: white;
+  /* Change text color */
+  border-radius: 5px;
+  /* Rounded corners */
+}
+
+/* Customizing the dropdown menu */
+.goog-te-menu-value {
+  background-color: #0083b0;
+  /* Background color for the dropdown */
+  color: white;
+  /* Text color for the dropdown */
+}
+
+@media (orientation: landscape) {
+  .sidebar {
+    display: none;
+  }
+
+  .mlp-auto {
+    margin-left: auto;
+  }
+}
+
+@media (orientation: portrait) {
+  .navbar {
+    display: none;
+  }
+
+  .mlp-24 {
+    margin-left: 6rem;
+  }
+
+  .mlp-20 {
+    margin-left: 5rem;
+  }
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  vertical-align: middle;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
