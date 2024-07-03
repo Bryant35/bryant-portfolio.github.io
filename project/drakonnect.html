@@ -22,6 +22,8 @@
         }
     </script>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -39,24 +41,24 @@
                 </div>
                 <!-- Profile image -->
                 <div class="static flex">
-                    <div class="w-36 h-36 rounded-full bg-white absolute top-0">
+                    <!-- <div class="w-36 h-36 rounded-full bg-white absolute top-0">
                         <img alt="imageofProfile" class="w-36 h-36 rounded-full border-4" style="border-color: #0083b0;"
                             src="https://media.licdn.com/dms/image/D5603AQHFjJVhaQiH2A/profile-displayphoto-shrink_200_200/0/1691646533029?e=2147483647&v=beta&t=8lEToPNHItHzFcpxbjMLV_TvNzwJ_4_ZmJkZmNs8dVU" />
-                    </div>
+                    </div> -->
                 </div> <!-- White circle for profile image -->
                 <div class="flex space-x-4 mr-14">
                     <a class="hover:bg-gray-800 text-white px-4 py-2 
                               no-underline transition duration-300 
-                              bg-transparent hover:bg-gray-700" href="#about">About</a>
+                              bg-transparent hover:bg-gray-700" href="../index.html#about">About</a>
                     <a class="hover:bg-gray-800 text-white px-4 py-2 
                               no-underline transition duration-300 
-                              bg-transparent hover:bg-gray-700" href="#projects">Projects</a>
+                              bg-transparent hover:bg-gray-700" href="../index.html#projects">Projects</a>
                     <a class="hover:bg-gray-800 text-white px-4 py-2 
                               no-underline transition duration-300 
-                              bg-transparent hover:bg-gray-700" href="#skills">Skills</a>
+                              bg-transparent hover:bg-gray-700" href="../index.html#skills">Skills</a>
                     <a class="hover:bg-gray-800 text-white px-4 py-2 
                               no-underline transition duration-300 
-                              bg-transparent hover:bg-gray-700" href="#contact">Contact</a>
+                              bg-transparent hover:bg-gray-700" href="../index.html#contact">Contact</a>
                 </div>
             </div>
         </nav>
@@ -65,19 +67,19 @@
                 <div class="grow pb-4 h-100">
                     <ul class="flex flex-col p-4">
                         <li class="mb-4">
-                            <a href="#about" class="hover:bg-gray-700 p-2 block tooltip"><i
+                            <a href="../index.html#about" class="hover:bg-gray-700 p-2 block tooltip"><i
                                     class="bi bi-info-circle-fill"></i><span class="tooltiptext">About</span></a>
                         </li>
                         <li class="mb-4">
-                            <a href="#projects" class="hover:bg-gray-700 p-2 block tooltip"><i
+                            <a href="../index.html#projects" class="hover:bg-gray-700 p-2 block tooltip"><i
                                     class="bi bi-file-code-fill"></i><span class="tooltiptext">Projects</span></a>
                         </li>
                         <li class="mb-4">
-                            <a href="#skills" class="hover:bg-gray-700 p-2 block tooltip"><i
+                            <a href="../index.html#skills" class="hover:bg-gray-700 p-2 block tooltip"><i
                                     class="bi bi-star-fill"></i><span class="tooltiptext">Skills</span></a>
                         </li>
                         <li class="mb-4">
-                            <a href="#contact" class="hover:bg-gray-700 p-2 block tooltip"><i
+                            <a href="../index.html#contact" class="hover:bg-gray-700 p-2 block tooltip"><i
                                     class="bi bi-person-lines-fill"></i><span class="tooltiptext">Contact</span></a>
                         </li>
                     </ul>
@@ -94,6 +96,7 @@
     <!-- <div id="google_translate_element" class="absolute w-fit h-fit mt-20 right-0 text-black"></div> -->
 
 
+    <img src="../imgs/drakonnect-banner.png" alt="" class="w-full landscape:mt-20">
     <!-- Content -->
     <div class="sidebar ml-24 mt-5 text-2xl font-bold">
         Drakonnect Project
@@ -101,56 +104,146 @@
     <!-- About section -->
     <div class="mlp-20 landscape:mx-2 portrait:mr-2">
         <div class="mb-16 container mx-auto">
-            <div class="navbar pt-20 mt-20 portrait:ml-2"></div>
-
-            <div
-                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-                <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute">
-                </div>
-                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-                <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-                <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png"
-                        class="dark:hidden w-[272px] h-[572px]" alt="">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png"
-                        class="hidden dark:block w-[272px] h-[572px]" alt="">
-                </div>
+            <div class="navbar pt-2 mt-2 portrait:ml-2"></div>
+            <div class="mb-2 text-4xl font-bold text-center">Drakonnect</div>
+            <div class="text-center font-bold italic">Role : Developer, UI Designer, UX Designer / Researcher</div>
+            <div class="mx-4 mb-3 text-justify">
+                Introducing Drakonnect, the iOS app for finding your perfect K-Drama community. Dive into a world of
+                comfort and connection as we handpick communities just for you. Discover detailed information on each
+                community, tailored to your preferences. Say hello to endless conversations, shared excitement, and a
+                sense of belonging. Get ready to connect with fellow K-Drama lovers like never before. It's time to make
+                your K-Drama journey even more unforgettable with Drakonnect!
+                <br><br>
+                <kbd class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-gray-600 text-gray-100 border-gray-500">#AppleDeveloperAcademy</kbd>
+                <kbd class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-gray-600 text-gray-100 border-gray-500">#CIP</kbd>
+                <kbd class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-gray-600 text-gray-100 border-gray-500">#Surabaya</kbd>
+                <br>
+                <br>
+                <kbd class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-blue-500 text-blue-300 border-blue-400">iOS</kbd>
+                <kbd class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-blue-500 text-blue-300 border-blue-400">SwiftUi</kbd>
             </div>
+            <!-- Swiper -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div
+                            class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+                            <div
+                                class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg">
+                            </div>
+                            <div
+                                class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg">
+                            </div>
+                            <div
+                                class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg">
+                            </div>
+                            <div
+                                class="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg">
+                            </div>
+                            <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png"
+                                    class="dark:hidden w-[272px] h-[572px]" alt="">
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png"
+                                    class="hidden dark:block w-[272px] h-[572px]" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+                            <div
+                                class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg">
+                            </div>
+                            <div
+                                class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg">
+                            </div>
+                            <div
+                                class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg">
+                            </div>
+                            <div
+                                class="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg">
+                            </div>
+                            <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png"
+                                    class="dark:hidden w-[272px] h-[572px]" alt="">
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png"
+                                    class="hidden dark:block w-[272px] h-[572px]" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+                            <div
+                                class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg">
+                            </div>
+                            <div
+                                class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg">
+                            </div>
+                            <div
+                                class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg">
+                            </div>
+                            <div
+                                class="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg">
+                            </div>
+                            <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png"
+                                    class="dark:hidden w-[272px] h-[572px]" alt="">
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png"
+                                    class="hidden dark:block w-[272px] h-[572px]" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Next and Prev Buttons -->
+                <div class="swiper-button-next text-black"></div>
+                <!-- Replace the Previous Button -->
+                <div class="swiper-button-prev text-black"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
         </div>
     </div>
     <footer class="mx-1 bg-white rounded-lg shadow bg-gradient-to-b from-gray-600 to-gray-800">
         <div class="p-4 md:py-8 mlp-24">
-            <!-- <div class="sm:flex sm:items-center sm:justify-between">
-                <a href=""
-                    class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                    <img src="" class="h-8" alt="" />
-                    <span
-                        class="self-center text-2xl font-semibold whitespace-nowrap ">Bryant </span>
-                </a>
-                <ul
-                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 ">
-                    <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Contact</a>
-                    </li>
-                </ul>
-            </div> -->
-            <!-- <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" /> -->
             <span class="block text-sm text-gray-500 text-center ">© 2024 <a href="https://github.com/Bryant35"
                     class="hover:underline" target="_blank">Bryant's Portfolio</a>.</span>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        var mySwiper = new Swiper('.mySwiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // Enable autoplay
+            autoplay: {
+                delay: 1500, // Set the delay to 500ms
+                disableOnInteraction: false, // Continue autoplay on swipe
+            },
+
+            // If you need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if you need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 
 </html>
