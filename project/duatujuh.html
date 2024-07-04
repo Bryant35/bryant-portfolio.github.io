@@ -16,7 +16,10 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
+                    },
+                    aspectRatio: {
+                        '29/3': '29 / 3',
+                    },
                 }
             },
         }
@@ -37,6 +40,7 @@
         <nav class="navbar bg-gray-700 py-2 fixed w-full top-0 left-0 z-50 h-20">
             <div class=" flex flex-wrap justify-between items-center my-5">
                 <div class="flex text-xl font-bold ml-14">
+                    <a href="javascript:history.back()"><i class="bi bi-arrow-bar-left"></i></a>
                     Bryant's Portfolio
                 </div>
                 <!-- Profile image -->
@@ -66,6 +70,10 @@
             <div class="flex flex-col justify-center items-center content-between h-screen">
                 <div class="grow pb-4 h-100">
                     <ul class="flex flex-col p-4">
+                        <li class="mb-4">
+                            <a href="javascript:history.back()" class="hover:bg-gray-700 p-2 block tooltip"><i
+                                    class="bi bi-box-arrow-left"></i><span class="tooltiptext">Back</span></a>
+                        </li>
                         <li class="mb-4">
                             <a href="../index.html#about" class="hover:bg-gray-700 p-2 block tooltip"><i
                                     class="bi bi-info-circle-fill"></i><span class="tooltiptext">About</span></a>
@@ -99,7 +107,7 @@
         <a href="https://github.com/Bryant35/Toko-Dua-Tujuh" class="absolute top-0 right-0 mr-5 mt-5"><img
                 src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github"
                 class="h-7" target="_blank"></a>
-        <img src="../imgs/drakonnect-banner.png" alt="" class="w-full ">
+        <img src="../imgs/drakonnect/drakonnect-banner.png" alt="banner-dua-tujuh" class="w-full aspect-[29/3]">
     </div>
     <!-- Content -->
     <!-- <div class="sidebar ml-24 mt-5 text-2xl font-bold">
@@ -112,13 +120,14 @@
             <div class="mb-2 text-4xl font-bold text-center">Sistem Toko Emas Perhiasan Dua Tujuh</div>
             <div class="text-center font-bold italic">Role : Fullstack Developer</div>
             <div class="mx-4 mb-3 text-justify">
-                Sistem toko emas perhiasan "Dua Tujuh" adalah aplikasi web berbasis Laravel yang mengelola penjualan dan
-                pembelian emas perhiasan, dirancang khusus untuk pemilik dan pegawai toko dengan hak akses yang berbeda
-                sesuai peran pengguna. Sistem ini memungkinkan pegawai mencatat transaksi penjualan dengan detail
-                barang, harga, dan informasi pelanggan, serta transaksi pembelian dari pemasok, dengan pembaruan
-                otomatis stok barang emas perhiasan yang tersedia. Sistem login yang aman menggunakan Laravel
-                authentication memberikan pemilik akses penuh untuk mengelola semua aspek sistem, sementara pegawai
-                memiliki akses terbatas hanya untuk mengelola transaksi penjualan dan mengecek ketersediaan barang.
+                Memperkenalkan Sistem Toko Emas Perhiasan "Dua Tujuh," sebuah aplikasi web berbasis Laravel yang
+                dirancang untuk mengelola penjualan dan pembelian emas perhiasan secara efisien. Sistem ini khusus
+                dibuat untuk pemilik dan pegawai toko, dengan hak akses yang berbeda sesuai peran masing-masing. Pegawai
+                dapat mencatat transaksi penjualan lengkap dengan detail barang, harga, dan informasi pelanggan, serta
+                transaksi pembelian dari pemasok, sementara stok barang diperbarui secara otomatis. Dengan sistem login
+                yang aman menggunakan Laravel authentication, pemilik memiliki kendali penuh untuk mengelola semua aspek
+                sistem, sedangkan pegawai memiliki akses terbatas hanya untuk mengelola transaksi penjualan dan mengecek
+                ketersediaan barang.
                 <br><br>
                 <kbd
                     class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-gray-600 text-gray-100 border-gray-500">#UC</kbd>
@@ -155,40 +164,6 @@
             <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div
-                            class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                            <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                                <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png"
-                                    class="dark:hidden h-[156px] md:h-[278px] w-full rounded-lg" alt="">
-                                <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png"
-                                    class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
-                            </div>
-                        </div>
-                        <div
-                            class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                            <div
-                                class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div
-                            class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                            <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                                <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png"
-                                    class="dark:hidden h-[156px] md:h-[278px] w-full rounded-lg" alt="">
-                                <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png"
-                                    class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
-                            </div>
-                        </div>
-                        <div
-                            class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                            <div
-                                class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
-                            </div>
-                        </div>
-                    </div>
                     <div class="swiper-slide">
                         <div
                             class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">

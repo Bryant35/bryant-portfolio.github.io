@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--  -->
     <title>Bryant's Portofolio</title>
     <!-- tailwind -->
@@ -321,7 +321,32 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="max-w-80 shadow bg-gray-800 border border-gray-700 rounded-lg shadow">
+                    <div class="relative max-w-80 shadow bg-gray-800 border border-gray-700 rounded-lg shadow">
+                        <div
+                            class="absolute top-0 left-0 bg-gray-700 text-white px-2 py-1 rounded m-2 flex flex-wrap gap-2">
+                            <img data-popover-target="popover-iOS" data-popover-placement="bottom"
+                                src="https://cdn.iconscout.com/icon/free/png-256/free-ios-apple-572947.png?f=webp"
+                                alt="" class="max-h-7">
+                            <div data-popover id="popover-iOS" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm transition-opacity
+                                        duration-300 border rounded-lg shadow-sm opacity-0 text-white border-gray-600
+                                        bg-gray-700">
+                                <div class="px-3 py-2">
+                                    <h3 class="font-semibold text-white">iOS</h3>
+                                </div>
+                                <div data-popper-arrow></div>
+                            </div>
+                            <img data-popover-target="popover-swiftui" data-popover-placement="bottom"
+                                src="https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png"
+                                alt="" class="max-h-7">
+                            <div data-popover id="popover-swiftui" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm transition-opacity
+                                        duration-300 border rounded-lg shadow-sm opacity-0 text-white border-gray-600
+                                        bg-gray-700">
+                                <div class="px-3 py-2">
+                                    <h3 class="font-semibold">SwiftUI</h3>
+                                </div>
+                                <div data-popper-arrow></div>
+                            </div>
+                        </div>
                         <a href="#">
                             <img class="rounded-t-lg aspect-square" src="/imgs/logoDrakonnect.png" alt="" />
                         </a>
@@ -329,7 +354,9 @@
                             <a href="https://github.com/Bryant35/drakonnect">
                                 <h6 class="mb-2 text-2xl font-bold tracking-tight text-white">Drakonnect iOS App</h6>
                             </a>
-                            <p class="mb-3 font-normal text-gray-400 ">Drakonnect dibentuk hanya hingga tahap prototyping yang dilakukan langsung dalam XCode(pembentukan front-end langsung pada aplikasi)</p>
+                            <p class="mb-3 font-normal text-gray-400 ">Drakonnect dibentuk hanya hingga tahap
+                                prototyping yang dilakukan langsung dalam XCode(pembentukan front-end langsung pada
+                                aplikasi)</p>
                             <a href="/project/drakonnect.html"
                                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
                                 Read more
