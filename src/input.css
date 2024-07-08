@@ -1,6 +1,9 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+body{
+  background: linear-gradient(90deg, #2b5876, #4e4376);
+}
 
 .goog-te-gadget {
   background-color: #0083b0;
@@ -72,10 +75,10 @@
 
 /* Change the background color of all pagination bullets */
 .swiper-pagination-bullet {
-  background-color: #2e528a !important; /* This is the Tailwind CSS color for bg-blue-500 */
+  background-color: #969696 !important; /* This is the Tailwind CSS color for bg-blue-500 */
 }
 
 /* Change the background color of the active pagination bullet */
 .swiper-pagination-bullet-active {
-  background-color: #000000 !important; /* This is the Tailwind CSS color for bg-red-500 */
+  background-color: #fff !important; /* This is the Tailwind CSS color for bg-red-500 */
 }

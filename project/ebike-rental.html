@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  -->
+    <title>Bryant's - Dua Tujuh</title>
+    <link rel="icon" href="../imgs/EBikeRental/ebike_logo.png">
+    <!-- tailwind -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    aspectRatio: {
+                        '29/3': '29 / 3',
+                    },
+                }
+            },
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../src/input.css">
+</head>
+
+<body class="text-white">
+    <div class="sticky top-0 z-50">
+        <!-- Navigation menu -->
+        <nav class="navbar bg-gray-700 py-2 fixed w-full top-0 left-0 z-50 h-20">
+            <div class=" flex flex-wrap justify-between items-center my-5">
+                <div class="flex text-xl font-bold ml-14">
+                    <a href="javascript:history.back()"><i class="bi bi-arrow-bar-left"></i></a>
+                    Bryant's Portfolio
+                </div>
+                <!-- Profile image -->
+                <div class="static flex">
+                </div> <!-- White circle for profile image -->
+                <div class="flex space-x-4 mr-14">
+                    <a class="hover:bg-gray-800 text-white px-4 py-2 
+                              no-underline transition duration-300 
+                              bg-transparent hover:bg-gray-700" href="../index.html#about">About</a>
+                    <a class="hover:bg-gray-800 text-white px-4 py-2 
+                              no-underline transition duration-300 
+                              bg-transparent hover:bg-gray-700" href="../index.html#projects">Projects</a>
+                    <a class="hover:bg-gray-800 text-white px-4 py-2 
+                              no-underline transition duration-300 
+                              bg-transparent hover:bg-gray-700" href="../index.html#skills">Skills</a>
+                    <a class="hover:bg-gray-800 text-white px-4 py-2 
+                              no-underline transition duration-300 
+                              bg-transparent hover:bg-gray-700" href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="sidebar bg-gray-800 text-white w-20 h-screen fixed top-0 left-0 z-40">
+            <div class="flex flex-col justify-center items-center content-between h-screen">
+                <div class="grow pb-4 h-100">
+                    <ul class="flex flex-col p-4">
+                        <li class="mb-4">
+                            <a href="javascript:history.back()" class="hover:bg-gray-700 p-2 block tooltip"><i
+                                    class="bi bi-box-arrow-left"></i><span class="tooltiptext">Back</span></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="../index.html#about" class="hover:bg-gray-700 p-2 block tooltip"><i
+                                    class="bi bi-info-circle-fill"></i><span class="tooltiptext">About</span></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="../index.html#projects" class="hover:bg-gray-700 p-2 block tooltip"><i
+                                    class="bi bi-file-code-fill"></i><span class="tooltiptext">Projects</span></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="../index.html#skills" class="hover:bg-gray-700 p-2 block tooltip"><i
+                                    class="bi bi-star-fill"></i><span class="tooltiptext">Skills</span></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="../index.html#contact" class="hover:bg-gray-700 p-2 block tooltip"><i
+                                    class="bi bi-person-lines-fill"></i><span class="tooltiptext">Contact</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="space-y-64"></div> -->
+                <div class="flex mb-4 tooltip">
+                    <img alt="imageofProfile" class="w-16 h-16 rounded-full border-4" style="border-color: #0083b0;"
+                        src="https://media.licdn.com/dms/image/D5603AQHFjJVhaQiH2A/profile-displayphoto-shrink_200_200/0/1691646533029?e=2147483647&v=beta&t=8lEToPNHItHzFcpxbjMLV_TvNzwJ_4_ZmJkZmNs8dVU" />
+                    <span class="tooltiptext">Bryant Anthony Thauwrisan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative landscape:mt-20">
+        <img src="../imgs/EBikeRental/ebike-banner.png" alt="banner-ebike" class="w-full aspect-[29/3]">
+
+        <!-- About section -->
+        <div class="mlp-20 landscape:mx-2 portrait:mr-2">
+            <div class="mb-16 container mx-auto">
+                <div class="navbar pt-2 mt-2 portrait:ml-2"></div>
+                <div class="mb-2 text-4xl font-bold text-center">Website E-Bike Rental</div>
+                <div class="mb-2 flex justify-center">
+                    <a href="https://github.com/Bryant35/E-Bike_Rental"
+                        class="font-bold text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none
+                        focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-3 py-1.5 text-center inline-flex items-center me-2 mb-2" target="_blank"><img
+                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" class="max-h-7 max-w-7 mr-2
+                        invert">
+                        Github</a>
+                </div>
+                <div class="text-center font-bold italic">Role : Fullstack Developer</div>
+                <div class="mx-4 mb-3 text-justify">
+                    <p class="mb-2">E-Bike Rental adalah sebuah website yang menyediakan platform bagi pengguna untuk
+                        menyewa sepeda listrik. Website ini dibuat untuk memenuhi tugas akhir semester dari mata kuliah
+                        Web Development di Universitas Ciputra. Website ini dibuat menggunakan framework Laravel dan
+                        database MySQL.</p>
+                    <br><br>
+                    <kbd
+                        class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-gray-600 text-gray-100 border-gray-500">#UC</kbd>
+                    <kbd
+                        class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-gray-600 text-gray-100 border-gray-500">#Ciputra</kbd>
+                    <kbd
+                        class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-gray-600 text-gray-100 border-gray-500">#ISB</kbd>
+                    <kbd
+                        class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-gray-600 text-gray-100 border-gray-500">#SistemInformasi</kbd>
+                    <kbd
+                        class="px-2 py-1.5 text-xs font-semibold border rounded-lg bg-gray-600 text-gray-100 border-gray-500">#Surabaya</kbd>
+                    <br>
+                    <br>
+                    <kbd
+                        class="px-2 py-1 mb-10 text-xs font-semibold border rounded-lg bg-blue-500 text-blue-300 border-blue-400">Laravel</kbd>
+                    <kbd
+                        class="px-2 py-1 text-xs font-semibold border rounded-lg bg-blue-500 text-blue-300 border-blue-400">PHP</kbd>
+                    <kbd
+                        class="px-2 py-1 text-xs font-semibold border rounded-lg bg-blue-500 text-blue-300 border-blue-400">HTML</kbd>
+                    <kbd
+                        class="px-2 py-1 text-xs font-semibold border rounded-lg bg-blue-500 text-blue-300 border-blue-400">CSS</kbd>
+                    <kbd
+                        class="px-2 py-1 text-xs font-semibold border rounded-lg bg-blue-500 text-blue-300 border-blue-400">Bootstrap
+                        CSS</kbd>
+                    <kbd
+                        class="px-2 py-1 text-xs font-semibold border rounded-lg bg-blue-500 text-blue-300 border-blue-400">JS</kbd>
+                    <kbd
+                        class="px-2 py-1 text-xs font-semibold border rounded-lg bg-blue-500 text-blue-300 border-blue-400">MySQL</kbd>
+                </div>
+                <!-- Swiper -->
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike1.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike2.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike3.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike4.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike5.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike6.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike7.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike8.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike9.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-10">
+                            <div
+                                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                                <div
+                                    class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                                    <img src="../imgs/EBikeRental/Ebike10.png"
+                                        class="h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                                </div>
+                            </div>
+                            <div
+                                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                                <div
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Next and Prev Buttons -->
+                    <div class="swiper-button-next text-white"></div>
+                    <!-- Replace the Previous Button -->
+                    <div class="swiper-button-prev text-white"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+            </div>
+        </div>
+        <footer class="mx-1 bg-white rounded-lg shadow bg-gradient-to-b from-gray-600 to-gray-800">
+            <div class="p-4 md:py-8 mlp-24">
+                <span class="block text-sm text-gray-500 text-center ">© 2024 <a href="https://github.com/Bryant35"
+                        class="hover:underline" target="_blank">Bryant's Portfolio</a>.</span>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            var mySwiper = new Swiper('.mySwiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // Enable autoplay
+                autoplay: {
+                    delay: 1800, // Set the delay to 500ms
+                    disableOnInteraction: false, // Continue autoplay on swipe
+                },
+
+                // If you need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if you need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        </script>
+</body>
+
+</html>

@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="src/input.css" />
 </head>
 
-<body class="text-white" style="background: linear-gradient(90deg, #00b4db, #0083b0)">
+<!-- <body class="text-white" style="background: linear-gradient(90deg, #00b4db, #0083b0)"> -->
+
+<body class="text-white" style="background: linear-gradient(90deg, #2b5876, #4e4376)">
     <div class="sticky top-0 z-50">
         <!-- Navigation menu -->
         <nav class="navbar bg-gray-700 py-2 fixed w-full top-0 left-0 z-50 h-20">
@@ -91,13 +93,14 @@
     <div class="sidebar ml-24 mt-5 text-2xl font-bold">Bryant's Portofolio</div>
     <!-- About section -->
     <div class="mlp-20 landscape:mx-2 portrait:mr-2">
-        <div class="mb-16 container landscape:mx-auto">
+        <div class="mb-5 container landscape:mx-auto">
             <div class="navbar pt-20 mt-20 portrait:ml-2"></div>
 
             <!-- Section About Me -->
             <section id="about"
                 class="justi-center text-center relative my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative overflow-hidden bg-gradient-to-b from-gray-600 to-gray-800">
                 <h2 class="text-2xl font-bold mb-4 text-center">About Me</h2>
+
                 <p class="text-base font-extralight">
                     Saya adalah mahasiswa semester 8 di Universitas Ciputra Surabaya,
                     Fakultas School of Information Technology, Jurusan
@@ -440,6 +443,34 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Project 4 -->
+                    <div class="max-w-80 border rounded-lg shadow bg-gray-800 border-gray-700">
+                        <a href="/project/ebike-rental.html">
+                            <img class="rounded-t-lg aspect-square h-fit w-full" src="/imgs/EBikeRental/ebike_logo.png"
+                                alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="https://github.com/Bryant35/E-Bike_Rental">
+                                <h6 class="mb-2 text-2xl font-bold tracking-tight text-white hover:underline">
+                                    E-Bike Rental
+                                </h6>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-500">
+                                Website tersebut dibentuk dengan menggunakan data dummy, dengan membuat simulasi
+                                peminjaman sepeda listrik. Website ini merupakan project pertama saya menggunakan
+                                framework Laravel.
+                            </p>
+                            <a href="/project/ebike-rental.html"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -535,7 +566,7 @@
             </section>
 
             <section id="contact"
-                class="justi-center text-center mt-20 relative my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative overflow-hidden bg-gray-800">
+                class="justi-center text-center mt-20 relative my-5 mb-5 px-4 py-4 rounded-lg shadow-md relative overflow-hidden bg-gray-800">
                 <div class="">
                     <h5 class="mb-3 text-base font-semibold text-white md:text-xl">
                         Contact Me
@@ -588,16 +619,69 @@
             </section>
             <!-- </section> -->
         </div>
+
+        <div class="mb-5 flex flex-wrap justify-center w-100 gap-5">
+            <div class="inline-flex rounded-md shadow-sm">
+                <a href="files/CV-BryantAT.pdf" aria-current="page" title="CV Bryant A. T" class="px-4 py-2 text-sm font-medium border rounded-s-lg bg-gray-800 border-gray-700 text-white
+                    hover:text-white hover:bg-gray-700 focus:ring-blue-500 focus:text-white" target="_blank">
+                    <i class="bi bi-eye-fill"></i> Designed CV
+                </a>
+                <a href="files/CV-BryantAT.pdf"
+                    class="px-4 py-2 text-sm font-medium border rounded-e-lg bg-gray-800 border-gray-700 text-white hover:text-white hover:bg-gray-700 focus:ring-blue-500 focus:text-white"
+                    download>
+                    <i class="bi bi-download"></i>
+                </a>
+            </div>
+            <div class="inline-flex rounded-md shadow-sm">
+                <a href="files/CV-ATS-BryantAT.pdf" aria-current="page" title="CV ATS Bryant A. T" class="px-4 py-2 text-sm font-medium border rounded-s-lg bg-gray-800 border-gray-700 text-white
+                    hover:text-white hover:bg-gray-700 focus:ring-blue-500 focus:text-white" target="_blank">
+                    <i class="bi bi-eye-fill"></i> ATS CV
+                </a>
+                <a href="files/CV-ATS-BryantAT.pdf"
+                    class="px-4 py-2 text-sm font-medium border rounded-e-lg bg-gray-800 border-gray-700 text-white hover:text-white hover:bg-gray-700 focus:ring-blue-500 focus:text-white"
+                    download>
+                    <i class="bi bi-download"></i>
+                </a>
+            </div>
+            <!-- <a class="flex text-center bg-blue-500 rounded rounded-full p-5" href="files/CV-BryantAT.pdf"
+                target="_blank">Download Designed CV</a> -->
+        </div>
+
         <footer class="mx-1 bg-white rounded-lg shadow bg-gradient-to-b from-gray-600 to-gray-800">
             <div class="p-4 md:py-8">
                 <span class="block text-sm text-gray-500 text-center">© 2024
                     <a href="https://github.com/Bryant35" class="hover:underline" target="_blank">Bryant's
                         Portfolio</a>.</span>
             </div>
+
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all navigation links
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    const targetId = this.getAttribute('href'); // Get the href attribute
+                    const targetElement = document.querySelector(
+                        targetId); // Select the target element
+
+                    if (targetElement) {
+                        const targetPosition = targetElement.getBoundingClientRect().top +
+                            window.pageYOffset - 145; // Calculate position with margin
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth' // Smooth scroll
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
