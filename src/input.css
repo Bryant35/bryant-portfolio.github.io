@@ -1,9 +1,9 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
-body{
+/* body{
   background: linear-gradient(90deg, #53a8e0, #a491e6);
-}
+} */
 
 .goog-te-gadget {
   background-color: #0083b0;
