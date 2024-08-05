@@ -9,6 +9,18 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
+    <style>
+        section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 
 <body>
@@ -663,6 +675,33 @@
                 });
             });
         });
+    </script>
+
+    <script>
+        // Function to check if an element is near or in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.75 // Trigger when the section is within 75% of the viewport height
+            );
+        }
+
+        // Function to reveal elements when they enter the viewport
+        function revealOnScroll() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        // Listen for scroll events
+        window.addEventListener('scroll', revealOnScroll);
+
+        // Run the function once on page load
+        revealOnScroll();
+
     </script>
 
 </body>
