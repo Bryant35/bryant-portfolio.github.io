@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="src/input.css" />
+  </head>
+
+  <body>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+      <p>Loading, please wait...</p>
+    </div>
+
+    <div id="main-content">
+      <nav
+        class="font-sans flex flex-col text-center content-center sticky top-0 sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full z-50"
+      >
+        <div class="mb-2 sm:mb-0 sm:flex sm:flex-row hidden">
+          <div class="h-10 w-10 self-center mr-2">
+            <div class="w-10 h-10 rounded-full bg-white top-0">
+              <img
+                alt="imageofProfile"
+                class="w-10 h-10 rounded-full"
+                src="https://media.licdn.com/dms/image/D5603AQHFjJVhaQiH2A/profile-displayphoto-shrink_200_200/0/1691646533029?e=2147483647&v=beta&t=8lEToPNHItHzFcpxbjMLV_TvNzwJ_4_ZmJkZmNs8dVU"
+              />
+            </div>
+          </div>
+          <div>
+            <a
+              href="#intro"
+              class="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold"
+              >Portfolio</a
+            ><br />
+            <span class="text-xs text-grey-dark"
+              >Bryant Anthony Thauwrisan</span
+            >
+          </div>
+        </div>
+
+        <div class="portrait:mb-0 self-center">
+          <!-- <div class="h-10" style="display: table-cell, vertical-align: middle;"> -->
+          <a
+            href="#about"
+            class="text-md no-underline text-black hover:text-blue-dark ml-2 px-1"
+            >About</a
+          >
+          <a
+            href="#qualification"
+            class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
+            >Experience</a
+          >
+          <!-- <a href="/two" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">About Us</a> -->
+          <a
+            href="#projects"
+            class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
+            >Project</a
+          >
+          <a
+            href="#skill"
+            class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
+            >Skills</a
+          >
+          <!-- </div> -->
+        </div>
+      </nav>
+
+      <!-- introduction -->
+      <section id="intro" class="bg-orange-theme py-3">
+        <div class="flex flex-row content-center">
+          <div
+            class="mx-5 my-auto flex shrink aspect-square min-w-[33%] min-h-[33%] items-center max-w-[30rem] overflow-hidden rounded rounded-2xl border-double border-4 border-orange-light"
+          >
+            <img
+              src="imgs/profile.JPG"
+              alt=""
+              class="bg-auto object-cover w-full h-full shadow-2xl"
+            />
+          </div>
+          <div class="mr-5 flex flex-col grow justify-center">
+            <div
+              class="text-2xl font-extrabold font-serif text-left text-orange-text"
+            >
+              I'm Bryant A. T.
+            </div>
+            <!-- <div class="my-3 text-md font-semibold font-serif text-left text-black">I'm a <span
+                        class="text-orange-text">Web Developer</span></div> -->
+            <div
+              class="text-md font-extralight font-sans text-justify text-black"
+            >
+              I am an 8th-semester student at Ciputra University Surabaya,
+              majoring in Information Systems, with a deep passion for
+              photography and videography, particularly in capturing events,
+              portraits, and product shots. My expertise lies in lighting and
+              composition, allowing me to create visually striking images and
+              videos that capture moments and evoke emotions. I am proficient in
+              using Lightroom, Premiere Pro, and Photoshop to enhance and bring
+              my creative visions to life. Driven by a desire to explore new
+              techniques and achieve professional growth, I am committed to
+              delivering impactful visual content that tells compelling stories.
+            </div>
+            <div class="flex flex-row flex-wrap justify-start gap-5 mt-5">
+              <div class="inline-flex rounded-md shadow-sm">
+                <a
+                  href="imgs/Pas-Foto.jpg"
+                  aria-current="page"
+                  title="CV Bryant A. T"
+                  class="px-4 py-2 text-sm font-medium border rounded-s-lg bg-orange-bright border-orange-light text-black hover:text-black hover:bg-orange-light focus:ring-gray-200 focus:text-black"
+                  target="_blank"
+                >
+                  <i class="bi bi-eye-fill"></i> Pas Foto 4x6
+                </a>
+                <a
+                  href="imgs/Pas-Foto.jpg"
+                  class="px-4 py-2 text-sm font-medium border rounded-e-lg bg-orange-bright border-orange-light text-black hover:text-black hover:bg-orange-light focus:ring-gray-500 focus:text-black"
+                  download
+                >
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+              <!-- <div class="inline-flex rounded-md shadow-sm">
+                <a
+                  href="files/CV-ATS-BryantAT.pdf"
+                  aria-current="page"
+                  title="CV ATS Bryant A. T"
+                  class="px-4 py-2 text-sm font-medium border rounded-s-lg bg-orange-bright border-orange-light text-black hover:text-black hover:bg-orange-light focus:ring-gray-200 focus:text-black"
+                  target="_blank"
+                >
+                  <i class="bi bi-eye-fill"></i> ATS CV
+                </a>
+                <a
+                  href="files/CV-ATS-BryantAT.pdf"
+                  class="px-4 py-2 text-sm font-medium border rounded-e-lg bg-orange-bright border-orange-light text-black hover:text-black hover:bg-orange-light focus:ring-gray-500 focus:text-black"
+                  download
+                >
+                  <i class="bi bi-download"></i>
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="px-3 py-5">
+        <div class="flex flex-row landscape:mx-20">
+          <div class="flex flex-col grow justify-center gap-4">
+            <div
+              class="text-2xl font-extrabold font-serif text-left text-orange-light"
+            >
+              I'm a Photographer and Videographer
+            </div>
+            <div
+              class="text-md font-extralight font-sans text-justify text-black"
+            >
+              Photography and videography have been my hobbies since 11th grade.
+              I began exploring photography during 11th grade at a place of
+              worship and started videography in 12th grade for school
+              assignments. I have also participated twice as a committee member
+              for orientation events at Ciputra University, Makassar.
+              Additionally, I was involved in my major's student organization
+              (SU) as a member of the publication and documentation committee
+              during the 2022-2023 academic year.
+            </div>
+            <hr />
+            <div class="flex flex-row justify-evenly gap-5">
+              <div class="flex flex-col flex-wrap">
+                <div class="flex font-bold">Name</div>
+                <div class="flex">Bryant Anthony Thauwrisan</div>
+                <div class="flex font-bold mt-5">Email</div>
+                <div class="flex">bryantthauwrisan7@gmail.com</div>
+                <div class="flex font-bold mt-5">Phone</div>
+                <div class="flex">+62 812-8687-8778</div>
+              </div>
+              <!-- <div class="flex flex-col">
+                    </div> -->
+              <div class="flex flex-col">
+                <div class="flex font-bold">Date of Birth</div>
+                <div class="flex">3rd May 2002</div>
+                <div class="flex font-bold mt-5">Domicile</div>
+                <div class="flex">Surabaya, East Java</div>
+                <div class="flex font-bold mt-5">From</div>
+                <div class="flex">Makassar, South Sulawesi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="qualification" class="bg-orange-theme py-5 px-5 pb-10">
+        <div class="flex flex-row justify-evenly gap-4">
+          <div class="flex flex-col gap-5">
+            <div class="text-2xl font-bold text-orange-fruit">Education</div>
+            <div class="relative border-s border-orange-light">
+              <div class="mb-10 ms-4">
+                <div
+                  class="absolute w-3 h-3 bg-orange-text rounded-full mt-1.5 -start-1.5 border border-orange-light"
+                ></div>
+                <div class="text-md font-light">2020 - 2024</div>
+                <div class="text-lg font-bold text-orange-text">
+                  Ciputra University Surabaya
+                </div>
+                <div class="text-md font-light">Information Systems</div>
+              </div>
+              <div class="ms-4">
+                <div
+                  class="absolute w-3 h-3 bg-orange-text rounded-full mt-1.5 -start-1.5 border border-orange-light"
+                ></div>
+                <div class="text-md font-light">2017 - 2020</div>
+                <div class="text-lg font-bold text-orange-text">
+                  SMA Zion Makassar
+                </div>
+                <div class="text-md font-light">IPS(Social)</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="text-2xl font-bold text-orange-fruit">Experience</div>
+            <div class="relative border-s border-orange-light">
+              <div class="mb-10 ms-4">
+                <div
+                  class="absolute w-3 h-3 bg-orange-text rounded-full mt-1.5 -start-1.5 border border-orange-light"
+                ></div>
+                <div class="text-md font-light">2023</div>
+                <div class="text-lg font-bold text-orange-text">
+                  Apple Developer Academy@UC
+                </div>
+                <div class="text-md font-light">Intern As Tech</div>
+              </div>
+              <div class="mb-10 ms-4">
+                <div
+                  class="absolute w-3 h-3 bg-orange-text rounded-full mt-1.5 -start-1.5 border border-orange-light"
+                ></div>
+                <div class="text-md font-light">2022-2023</div>
+                <div class="text-lg font-bold text-orange-text">
+                  Student Union Publication and Documentation
+                </div>
+                <div class="text-md font-light">
+                  Photographer and Videographer
+                </div>
+              </div>
+              <div class="mb-10 ms-4">
+                <div
+                  class="absolute w-3 h-3 bg-orange-text rounded-full mt-1.5 -start-1.5 border border-orange-light"
+                ></div>
+                <div class="text-md font-light">2022</div>
+                <div class="text-lg font-bold text-orange-text">
+                  Head Koor of PDD UC Oweek 2022
+                </div>
+                <div class="text-md font-light">
+                  Photographer and Videographer
+                </div>
+              </div>
+              <div class="ms-4">
+                <div
+                  class="absolute w-3 h-3 bg-orange-text rounded-full mt-1.5 -start-1.5 border border-orange-light"
+                ></div>
+                <div class="text-md font-light">2021</div>
+                <div class="text-lg font-bold text-orange-text">
+                  Committee Member of PDD UC Oweek 2021
+                </div>
+                <div class="text-md font-light">
+                  Photographer and Videographer
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project -->
+      <section
+        id="projects"
+        class="justi-center text-center relative px-4 py-5 relative overflow-hidden"
+      >
+        <h2 class="text-2xl font-bold mb-4 text-center">
+          My Projects - Photography
+        </h2>
+        <div class="flex flex-nowrap overflow-x-auto gap-5">
+          <!-- Project 1 -->
+
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="grid gap-4">
+              <div class="">
+                <a href="cv/photo/file/Ka-Kevin/Grids.html">
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="cv/photo/file/Ka-Kevin/_BAT3715.JPG"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="cv/photo/file/Oweek-2021/IMG_3428.JPG"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="cv/photo/file/Oweek-2022/BAT03246.JPG"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="cv/photo/file/Hillsong-2019/IMG_0325.JPG"
+                  alt="Hillsong Event"
+                />
+              </div>
+              <div>
+                <a href="cv/photo/file/Ka-Kevin/Grids.html">
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="cv/photo/file/Ka-Kevin/_BAT3972.JPG"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="cv/photo/file/Hillsong-2019/IMG_0475.JPG"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="cv/photo/file/Oweek-2022/BAT02470.JPG"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="cv/photo/file/Oweek-2022/BAT04438.JPG"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="cv/photo/file/Sekoci/_BAT4512.JPG"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- <div class="grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+                  alt=""
+                />
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill -->
+      <section id="skill" class="py-3 py-5 bg-orange-theme">
+        <div class="text-2xl font-bold text-center">Skills</div>
+        <div class="flex flex-row mx-10 mt-5 gap-5">
+          <div class="flex flex-col w-full gap-2">
+            <div class="w-100">
+              <div
+                class="mb-1 text-base font-medium inline"
+                data-popover-target="popover-description"
+              >
+                <img
+                  src="https://www.freeiconspng.com/thumbs/camera-icon/camera-icon-png--clipart-best-23.png"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                Photographer
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 65%"
+                ></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-1 text-base font-medium inline">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/8029/8029503.png"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                Videographer
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 55%"
+                ></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-1 text-base font-medium inline">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                Adobe Photoshop
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-1 text-base font-medium inline">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/640px-Adobe_Photoshop_Lightroom_CC_logo.svg.png"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                Lightroom
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 55%"
+                ></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-1 text-base font-medium inline">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/1051px-Adobe_Premiere_Pro_CC_icon.svg.png"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                Adobe Premiere
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 70%"
+                ></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-1 text-base font-medium inline">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/800px-Figma-logo.svg.png"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                Figma Design
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="flex flex-col w-full gap-2">
+            <div class="">
+              <div class="mb-1 text-base font-medium inline">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                Laravel Framework
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-1 text-base font-medium inline">
+                <img
+                  src="https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                SwiftUi
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 35%"
+                ></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-1 text-base font-medium inline">
+                <img
+                  src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                Bootstrap
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 55%"
+                ></div>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-1 text-base font-medium inline">
+                <img
+                  src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+                  alt=""
+                  class="h-5 inline mb-1"
+                />
+                TailwindCSS
+              </div>
+              <div class="w-full bg-orange-bright rounded-full h-2.5 mb-4">
+                <div
+                  class="bg-orange-text h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- youtube / video porto -->
+      <section id="other-portfolio" class="py-6 justify-center">
+        <div class="mb-6 text-2xl font-bold text-center">
+          Other Project/Skill
+        </div>
+        <div class="flex flex-row justify-center">
+          <a
+            href="project/other/video.html"
+            aria-current="page"
+            title="CV Bryant A. T"
+            class="px-4 py-2 text-sm font-medium border rounded-lg bg-orange-bright border-orange-light text-black hover:text-black hover:bg-orange-light focus:ring-gray-200 focus:text-black"
+          >
+            <i class="bi bi-eye-fill"></i> Video Portfolio
+          </a>
+        </div>
+      </section>
+    </div>
+    <footer class="bg-orange-fruit">
+      <div class="p-4 md:py-8">
+        <span class="block text-sm text-black text-center"
+          >2024
+          <a
+            href="https://github.com/Bryant35"
+            class="hover:underline"
+            target="_blank"
+            >Bryant's Portfolio</a
+          >™.</span
+        >
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/tailwind.config.js"></script>
+    <script>
+      // link scroll section
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll('a[href^="#"]');
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default anchor click behavior
+            const targetId = this.getAttribute("href"); // Get the href attribute
+            const targetElement = document.querySelector(targetId); // Select the target element
+
+            if (targetElement) {
+              let targetPosition; // Declare variable outside the blocks
+              if (window.matchMedia("(orientation: landscape)").matches) {
+                targetPosition =
+                  targetElement.getBoundingClientRect().top +
+                  window.pageYOffset -
+                  70; // Calculate position with margin for landscape orientation
+              } else if (window.matchMedia("(orientation: portrait)").matches) {
+                targetPosition =
+                  targetElement.getBoundingClientRect().top +
+                  window.pageYOffset -
+                  40; // Calculate position with margin for portrait orientation
+              }
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth", // Smooth scroll
+              });
+            }
+          });
+        });
+      });
+    </script>
+
+    <script>
+      // Function to check if an element is near or in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top <=
+          (window.innerHeight || document.documentElement.clientHeight) * 0.9 // Trigger when the section is within 75% of the viewport height
+        );
+      }
+
+      // Function to reveal elements when they enter the viewport
+      function revealOnScroll() {
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section) => {
+          if (isInViewport(section)) {
+            section.classList.add("visible");
+          }
+        });
+      }
+
+      // Listen for scroll events
+      window.addEventListener("scroll", revealOnScroll);
+
+      // Run the function once on page load
+      revealOnScroll();
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        const mainContent = document.getElementById("main-content");
+
+        // Hide the loading screen
+        loadingScreen.style.display = "none";
+
+        // Show the main content
+        mainContent.style.display = "block";
+
+        // Add a class to fade in the content
+        mainContent.classList.add("loaded");
+      });
+    </script>
+  </body>
+</html>
