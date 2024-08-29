@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="src/input.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+      <p>Loading content, please wait...</p>
+    </div>
+
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/tailwind.config.js"></script>
+    <script>
+      // link scroll section
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll('a[href^="#"]');
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default anchor click behavior
+            const targetId = this.getAttribute("href"); // Get the href attribute
+            const targetElement = document.querySelector(targetId); // Select the target element
+
+            if (targetElement) {
+              let targetPosition; // Declare variable outside the blocks
+              if (window.matchMedia("(orientation: landscape)").matches) {
+                targetPosition =
+                  targetElement.getBoundingClientRect().top +
+                  window.pageYOffset -
+                  70; // Calculate position with margin for landscape orientation
+              } else if (window.matchMedia("(orientation: portrait)").matches) {
+                targetPosition =
+                  targetElement.getBoundingClientRect().top +
+                  window.pageYOffset -
+                  40; // Calculate position with margin for portrait orientation
+              }
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth", // Smooth scroll
+              });
+            }
+          });
+        });
+      });
+    </script>
+
+    <script>
+      // Function to check if an element is near or in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top <=
+          (window.innerHeight || document.documentElement.clientHeight) * 0.9 // Trigger when the section is within 75% of the viewport height
+        );
+      }
+
+      // Function to reveal elements when they enter the viewport
+      function revealOnScroll() {
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section) => {
+          if (isInViewport(section)) {
+            section.classList.add("visible");
+          }
+        });
+      }
+
+      // Listen for scroll events
+      window.addEventListener("scroll", revealOnScroll);
+
+      // Run the function once on page load
+      revealOnScroll();
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        const mainContent = document.getElementById("main-content");
+
+        // Hide the loading screen
+        loadingScreen.style.display = "none";
+
+        // Show the main content
+        mainContent.style.display = "block";
+
+        // Add a class to fade in the content
+        mainContent.classList.add("loaded");
+      });
+    </script>
+  </body>
+</html>

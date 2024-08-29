@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hillsong Photo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="../../../../src/input.css" />
+
+    <!-- Optional CSS -->
+    <style>
+      .big-screen img {
+        width: 100%;
+        max-height: 500px; /* Set a max height for landscape images */
+        object-fit: contain; /* Makes sure the image scales without distortion */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+      }
+
+      .portrait {
+        height: 500px; /* Matches the height of landscape images */
+        width: auto;
+      }
+
+      .small-screen {
+        display: flex;
+        overflow-x: auto; /* Enables horizontal scrolling */
+        overflow-y: hidden; /* Prevents vertical scrolling */
+        gap: 4px; /* Space between images */
+        padding-bottom: 10px; /* Space for scrollbar */
+        scroll-behavior: smooth; /* Smooth scrolling */
+        white-space: nowrap; /* Prevent line breaks in flex items */
+        max-height: 130px; /* Ensures no vertical overflow */
+      }
+
+      .small-image-container {
+        width: 120px; /* Fixed width */
+        height: 120px; /* Fixed height to match width for 1:1 aspect ratio */
+        overflow: hidden; /* Hide overflow to crop the image */
+        border-radius: 8px; /* Rounded corners */
+      }
+
+      .small-image {
+        width: 100%; /* Full width of container */
+        height: 100%; /* Full height of container */
+        object-fit: cover; /* Crop image to fill container */
+      }
+
+      /* Hide scrollbar in WebKit browsers */
+      .small-screen::-webkit-scrollbar {
+        height: 8px; /* Set scrollbar height */
+      }
+
+      .small-screen::-webkit-scrollbar-thumb {
+        background-color: #888; /* Set scrollbar thumb color */
+        border-radius: 4px; /* Set scrollbar thumb border radius */
+      }
+
+      .small-screen::-webkit-scrollbar-track {
+        background-color: #f1f1f1; /* Set scrollbar track color */
+      }
+
+      /* Hide scrollbar in other browsers */
+      .small-screen {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .small-screen > div {
+        min-width: 20%; /* Ensures 5 images per row */
+        flex: 1 0 auto; /* Adjusts the flex basis to ensure proper wrapping */
+      }
+    </style>
+  </head>
+
+  <body class="bg-orange-theme">
+    <div id="loading-screen">
+      <div class="spinner"></div>
+      <p>Loading, please wait...</p>
+    </div>
+    <nav
+      class="font-sans flex flex-col text-center content-center sticky top-0 sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full z-50"
+    >
+      <div class="mb-2 sm:mb-0 sm:flex sm:flex-row hidden">
+        <div class="h-10 w-10 self-center mr-2">
+          <div class="w-10 h-10 rounded-full bg-white top-0">
+            <img
+              alt="imageofProfile"
+              class="w-10 h-10 rounded-full"
+              src="https://media.licdn.com/dms/image/D5603AQHFjJVhaQiH2A/profile-displayphoto-shrink_200_200/0/1691646533029?e=2147483647&v=beta&t=8lEToPNHItHzFcpxbjMLV_TvNzwJ_4_ZmJkZmNs8dVU"
+            />
+          </div>
+        </div>
+        <div>
+          <a
+            href="../../../photo/cv.html#intro"
+            class="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold"
+            >Portfolio</a
+          ><br />
+          <span class="text-xs text-grey-dark">Bryant Anthony Thauwrisan</span>
+        </div>
+      </div>
+
+      <div class="portrait:mb-0 self-center">
+        <!-- <div class="h-10" style="display: table-cell, vertical-align: middle;"> -->
+        <a
+          href="../../../photo/cv.html#about"
+          class="text-md no-underline text-black hover:text-blue-dark ml-2 px-1"
+          >About</a
+        >
+        <a
+          href="../../../photo/cv.html#qualification"
+          class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
+          >Experience</a
+        >
+        <!-- <a href="/two" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">About Us</a> -->
+        <a
+          href="../../../photo/cv.html#projects"
+          class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
+          >Project</a
+        >
+        <a
+          href="../../../photo/cv.html#skill"
+          class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
+          >Skills</a
+        >
+        <!-- </div> -->
+      </div>
+    </nav>
+
+    <div class="absolute m-3 drop-shadow-md hover:filter-none">
+      <div class="bg-white rounded-full p-2 px-3">
+        <!-- Back -->
+        <a href="../../../photo/cv.html#projects" class="font-bold">
+          <i class="bi bi-arrow-left"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="mt-2 text-center">
+        <h2 class="mx-14 text-3xl font-bold text-orange-text">
+          Hillsong Collage Concert Makassar 2019
+        </h2>
+        <p>
+          Gear : <span class="underline">Canon EOS 1300D</span>
+          <br />
+          <span class="font-bold">Lens :</span> Yongnuo 50mm f1.8II
+        </p>
+      </div>
+
+      <div class="grid gap-4 m-3">
+        <!-- Big Screen Image -->
+        <div class="big-screen">
+          <img
+            id="bigImage"
+            class="big-image rounded-lg"
+            src="IMG_0325.JPG"
+            alt="Big Screen Image"
+          />
+        </div>
+
+        <!-- Small Screen Images -->
+        <div class="flex small-screen gap-4">
+          <div class="small-image-container">
+            <img class="small-image" src="IMG_0325.JPG" alt="Small Image 1" />
+          </div>
+          <div class="small-image-container">
+            <img class="small-image" src="IMG_0170.JPG" alt="Small Image 2" />
+          </div>
+          <div class="small-image-container">
+            <img class="small-image" src="IMG_0340.JPG" alt="Small Image 3" />
+          </div>
+          <div class="small-image-container">
+            <img class="small-image" src="IMG_0475.JPG" alt="Small Image 4" />
+          </div>
+          <div class="small-image-container">
+            <img class="small-image" src="IMG_0513.JPG" alt="Small Image 5" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript to Handle Image Click -->
+    <script src="../../../js/gallery.js"></script>
+    <!-- Loading Screen -->
+    <script src="../../../js/load-screen.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../../../src/tailwind.config.js"></script>
+  </body>
+</html>
